@@ -106,6 +106,7 @@
     padding: 10px;
     font-size: 17px;
     border: 1px solid #ECECFF;
+    color: #000;
 }
 
 .section-one_links img {
@@ -114,31 +115,51 @@
 }
 
 .section-one_links a:hover {
-    transform: translateY(1px);
+    border: 1px solid #d1d1fb;
     transition: 0.3s;
 }
 
+.section-two-title {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.section-two-buttons {
+    margin-top: 40px;
+}
 
 .tabs {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 20px;
 }
 
 .tab-button {
+    width: 110px;
+    height: 40px;
+    border: 1px solid rgb(59, 59, 255);
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(59, 59, 255);
     padding: 10px 20px;
     margin: 0 5px;
     cursor: pointer;
-    border: none;
-    background-color: #ddd;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tab-button:hover {
-    background-color: #ccc;
+    background-color: rgb(59, 59, 255);
+    color: #FFF;
+    transition: 0.3s;
 }
 
 .tab-button.active {
-    background-color: #bbb;
+    background-color: rgb(59, 59, 255);
+    color: #fff;
 }
 
 .tab-content {
@@ -147,4 +168,88 @@
 
 .tab-content.active {
     display: block;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-one {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #f6f9ff;
+    box-shadow: 0 5px 7px 2px rgba(156, 156, 254, 0.2);
+    border-radius: 5px;
+    max-width: 390px;
+    font-size: 15px;
+}
+
+.card-one-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-one img {
+    width: 75px;
+    height: 48px;
+}
+
+.card-one-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4f0ff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: rgb(59, 59, 255);
+}
+
+.card-description {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards_button {
+    width: 258px;
+    height: 42px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    background-color: rgb(0, 227, 0);
+    font-size: 17px;
+    color: #fff;
+}
+
+.cards_button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 128, 0);
+    transition: 0.3s;
+}
+
+.cards-one-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-one-button {
+    border-radius: 5px;
+    background-color: rgb(49, 49, 255);
+    color: #fff;
+    font-size: 20px;
+    width: 181px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
