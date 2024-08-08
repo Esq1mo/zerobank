@@ -9,6 +9,7 @@
 
 .body {
     background-color: #f6f9ff;
+    padding: 0 100px;
 }
 
 .container {
@@ -43,16 +44,20 @@ nav ul li ul {
     left: 0;
     width: 100%;
     background-color: #fff;
+    padding: 0 100px;
     
 }
 
 nav ul li ul li {
     border-bottom: 1px solid rgba(236, 236, 255, 0.5);
     padding-bottom: 10px;
+    font-size: 20px;
+    padding: 0 -100px;
 }
 
 nav ul li ul li a:hover {
     color: #000;
+    
 }
 
 nav ul li:hover > ul {
@@ -64,7 +69,7 @@ nav ul li:hover > ul {
     grid-gap: 20px;
     align-self: center;
     border: 1px solid rgba(236, 236, 255, 0.5);
-    box-shadow: 1px 4px 8px rgba(236, 236, 255, 0.5);
+    box-shadow: 1px 20px 30px rgba(156, 212, 255, 0.5);
 }
 
 nav ul li ul {
@@ -91,6 +96,39 @@ nav a b {
     border-bottom: 1px blue solid;
     color: rgb(59, 59, 255);;
 }
+
+/* Стили для выпадающего списка */
+.dropdown-content {
+    display: none; /* Скрываем выпадающий список по умолчанию */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5px; /* Немного отступа сверху */
+}
+
+.dropdown-content li {
+    list-style-type: none;
+    padding: 8px 16px;
+}
+
+.dropdown-content li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета ссылок при наведении */
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
+
+/* Показать меню при добавлении класса show */
+.show {
+    display: block;
+}
+
 
 .section-one {
     border: 1px solid #f6f9ff;
