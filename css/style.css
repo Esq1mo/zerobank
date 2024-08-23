@@ -97,15 +97,14 @@ nav a b {
     color: rgb(59, 59, 255);;
 }
 
-/* Стили для выпадающего списка */
 .dropdown-content {
-    display: none; /* Скрываем выпадающий список по умолчанию */
+    display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 5px; /* Немного отступа сверху */
+    margin-top: 5px;
 }
 
 .dropdown-content li {
@@ -119,16 +118,13 @@ nav a b {
     display: block;
 }
 
-/* Изменение цвета ссылок при наведении */
 .dropdown-content li a:hover {
     background-color: #ddd;
 }
 
-/* Показать меню при добавлении класса show */
 .show {
     display: block;
 }
-
 
 .section-one {
     border: 1px solid #f6f9ff;
@@ -601,4 +597,10 @@ nav a b {
     margin: 10px 0 30px 0;
     color: #D3D3D3;
     font-size: 17px;
+}
+
+.credit-cards-banks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
